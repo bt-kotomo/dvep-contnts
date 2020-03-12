@@ -1,0 +1,19 @@
+<div id="STAMP-TOP" class="BACKBONE-PAGE">
+	<div class="stamp_area bgcolor2">
+		<div class="memo ftcolor2">スタンプを<span class="stampRank1MaxText"></span>個集めると<br><span class="stampRank1TypeText"></span>をプレゼント</div>
+		<div id="stampCardRegion"><ol class="STAMPCARD">
+			<% for( var index = 0 ; index < AppConf.layout.stamp.initialStampCount; index++){ %><li data-index="<%= index %>" class="bgcolor3 ftcolor2"></li><% } %>
+		</ol>
+		</div>
+	</div>
+	<div class="btn_area bgcolor1">
+		<button id="get-stamp-btn" type="button" class="btbgcolor1 btftcolor1">スタンプを押す</button>
+		<div class="use_cond ftcolor1">利用条件</div>
+		<div class="ftcolor3">同日利用制限：<span class="use-cond-interval"></span></div>
+		<br>
+		<div class="ftcolor3" id="stamp-note"></div>
+	</div>
+	<div id="stamp-interaction"></div>
+</div>
+
+<%= App.util.injectProgressScreenDom()  %>

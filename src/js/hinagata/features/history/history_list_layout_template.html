@@ -1,0 +1,14 @@
+<div id="HISTORY-LIST" class="BACKBONE-PAGE">
+<div class="btn_area serchbgcolor1">
+	<% if( AppConf.features.point || AppConf.features.smart ){ %>
+		<button type="button" data-mode="point" class="mode-switch-btn active btftcolor1 btbgcolor1">ポイント</button>
+	<% } %>
+	<button type="button" data-mode="coupon" class="mode-switch-btn btftcolor2 btbgcolor2">クーポン</button>
+	<% if( AppConf.features.stamp ){ %>
+		<button type="button" data-mode="stamp" class="mode-switch-btn btftcolor2 btbgcolor2">スタンプ</button>
+	<% } %>
+</div>
+<div id="history-list-region">
+</div>
+</div>
+<%= App.util.injectProgressScreenDom()  %>

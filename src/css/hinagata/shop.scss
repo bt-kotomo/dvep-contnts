@@ -1,0 +1,203 @@
+//////// FROM CSS ////////
+#SHOP-LIST{}
+
+#SHOP-LIST .search {
+	text-align: center;
+	padding: 0 20px 0px 20px;
+}
+
+#SHOP-LIST input[type=text] {
+	width: 100%;
+	font-size: 12px;
+	border-radius: 5px;
+	height: 26px;
+}
+
+#SHOP-LIST .search_btn {
+	padding: 10px 0 8px 0;
+	text-align: center;
+}
+
+#SHOP-LIST .search_btn button {
+	width: 30%;
+	height: 26px;
+	border-radius: 5px;
+	font-size: 12px;
+	border: none;
+}
+
+#SHOP-LIST .search_btn button:nth-child(2) {
+	margin: 0 3% 0 3%;
+}
+
+#SHOP-LIST .freewordTextBlock{
+	text-align: left;
+	position: relative;
+	padding-bottom: 10px;
+	height: 32px;
+}
+
+#SHOP-LIST .textBoxWrap{
+	position: absolute;
+	left: 0;
+	right: 70px;
+}
+
+#SHOP-LIST .searchBtn{
+	height: 32px;
+	border-radius: 5px;
+	font-size: 12px;
+	border: none;
+	border: 2px solid;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+#SHOP-LIST .SHOPS li
+,#SHOP-LIST .CATEGORIES li {
+	padding: 15px 20px 15px 20px;
+	border-bottom: 1px dotted;
+}
+
+#SHOP-LIST .row{
+	padding-right: 15px;
+	background: url(../image/common/arrow.svg) no-repeat right center;
+	background-size: 12px;
+}
+
+#SHOP-LIST .shopName{
+	font-size: 16px;
+}
+#SHOP-LIST .shopDistance{
+	margin-top: 7px;
+	font-size: 14px;
+}
+
+#SHOP-LIST .selectedCategories{
+	padding: 0px 20px;
+	font-size: 13px;
+	text-decoration: underline;
+}
+
+#SHOP-LIST .selectedCategories ol{
+	border-top-style: solid;
+	border-top-width: 1px;
+	padding: 4px 0px 0px 0px;
+}
+
+#SHOP-LIST .selectedCategories li{
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	font-size: 13px;
+}
+#SHOP-LIST .selectedCategories li:last-child{
+	border: none;
+}
+
+#SHOP-LIST .selectedCategories li .offset{
+	display: inline-block;
+}
+
+
+#SHOP-DETAIL {
+	padding: 18px 20px 0px 20px;
+}
+
+#SHOP-DETAIL .title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 14px;
+}
+
+#SHOP-DETAIL .aim {
+	font-size: 12px;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+
+#SHOP-DETAIL .coupon_btn {
+	width: 100%;
+	white-space: nowrap;
+	letter-spacing: -0.05em;
+	border-radius: 5px;
+	height: 44px;
+	font-size: 16px;
+	border: none;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+#SHOP-DETAIL .map {
+	border-top: 1px dotted;
+	padding-top: 15px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+#SHOP-DETAIL .address,
+#SHOP-DETAIL .route,
+#SHOP-DETAIL .telephone,
+#SHOP-DETAIL .worktime,
+#SHOP-DETAIL .holiday,
+#SHOP-DETAIL .reception,
+#SHOP-DETAIL .parking {
+	font-size: 12px;
+	line-height: 20px;
+	padding-left: 20px;
+}
+
+#SHOP-DETAIL .address {
+	background: url(../image/common/map.svg) no-repeat left top;
+	background-size: auto 18px;
+}
+
+#SHOP-DETAIL .route {
+	background: url(../image/common/access.svg) no-repeat left top;
+	background-size: auto 18px;
+}
+
+#SHOP-DETAIL .telephone {
+	background: url(../image/common/tel.svg) no-repeat left top;
+	background-size: auto 18px;
+}
+
+#SHOP-DETAIL .worktime {
+	background: url(../image/common/time.svg) no-repeat left center;
+	background-size: 16px auto;
+	margin-bottom: 20px;
+}
+
+#SHOP-DETAIL .reception {
+	background: url(../image/common/reception.svg) no-repeat left top;
+	background-size: auto 18px;
+	margin-bottom: 20px;
+}
+
+#SHOP-DETAIL .holiday {
+	background: url(../image/common/business_hours.svg) no-repeat left 4px;
+	background-size: 16px auto;
+	padding-bottom: 20px;
+}
+
+#SHOP-DETAIL .parking {
+	background: url(../image/common/parking.svg) no-repeat left 4px;
+	background-size: 16px auto;
+	padding-bottom: 20px;
+}
+
+#SHOP-DETAIL .map-btn,
+#SHOP-DETAIL .route-btn,
+#SHOP-DETAIL .call-btn {
+	width: 100%;
+	height: 34px;
+	font-size: 14px;
+	line-height: 30px;
+	border: 2px solid;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	background-color: transparent;
+}
+

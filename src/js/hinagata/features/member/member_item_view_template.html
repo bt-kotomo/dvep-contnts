@@ -1,0 +1,41 @@
+<div id="MEMBER-DETAIL" class="BACKBONE-PAGE bgcolor1">
+	<div class="bg_cardmem">
+		<div class="inner_card">
+			<img src="./image/member/image_empty.png" alt="" class="card-image" />
+			<div class="code_cardmem">
+				<span class="txtrank hide">WDC-</span>
+				<span id="member-id-string" class="bg_code"></span>
+			</div>
+		</div>
+	</div>
+	<div class="member_change">この画面をスタッフに提示して下さい。</div>
+	<div id="smart-status-region" class="smart_status">
+		<div class="box_code"><img id="member-id-barcode" class="qr_member"></div>
+		<div class="current_smart">
+			<div class="value-div1 ftcolor1">ポイント</div>
+			<div class="value-div2">
+				<span id="point-value" class="charge-text">0 <span class="text">pt</span></span>
+			</div>
+		</div>
+		<div class="total_smart">	
+			<div class="total-text ftcolor1">今年度累計購買金額</div>
+			<div class="total-value">
+				<span id="total-value" class="charge-text">0 <span class="text">円</span></span>
+			</div>
+		</div>
+		<div class="total_smart">	
+			<div class="total-text ftcolor1">失効予定ポイント</div>
+			<div class="value-div2">
+				<!-- <span class="charge-text">3,000<span class="text">円</span></span><br> -->
+				<span id="coupon-value" class="charge-text">0</span><br>
+				<!-- <span class="charge-limit">(有効期限：2018/04/04)</span> -->
+				<!-- <span id="coupon-limit" class="charge-limit"></span> -->
+			</div>
+			<div id="coupon-limit" class="charge-limit"></div>
+		</div>	
+	</div>	
+
+	<div id="available-coupon-region" class="bgcolor1 ftcolor1"></div>
+	<br>
+</div>
+<%= App.util.injectProgressScreenDom()  %>

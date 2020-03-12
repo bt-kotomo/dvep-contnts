@@ -1,0 +1,51 @@
+<div class="point-exchange point-exchange-process">
+    <div class="poex-container">
+        <div class="poex-item-info">
+            <div class="poex-wrap">
+                <p class="text">現在のポイント数</p>
+                <table class="style-1">
+                    <tr>
+                        <td>
+                            <img src="<%- items[0].logo %>" />
+                            <p class="poex-point"><span class="number"><%- App.util.text.numberWithDelimiter(items[0].point) %></span> pt</p>
+                        </td>
+                        <td>
+                            <img src="<%- items[1].logo %>" />
+                            <p class="poex-point"><span class="number"><%- App.util.text.numberWithDelimiter(items[1].point) %></span> pt</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="poex-content">
+            <div class="poex-item-compare">
+                <p class="text">交換レート</p>
+                <table>
+                    <tr>
+                        <td class="item item-left">
+                            <img src="<%- items[0].logo %>" />
+                            <span class="poex-point"><span class="number"><%- App.util.text.numberWithDelimiter(items[0].value) %></span> pt</span>
+                        </td>
+                        <td class="equal">=</td>
+                        <td class="item item-right">
+                            <img src="<%- items[1].logo %>" />
+                            <span class="poex-point"><span class="number"><%- App.util.text.numberWithDelimiter(items[1].value) %></span> pt</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="poex-form">
+                <p class="text">交換するポイント数</p>
+                <div class="control">
+                    <input id="amount-exchange" type="number" value=""/>
+                    <span class="unit">pt</span>
+                </div>
+            </div>
+            <div class="poex-btns">
+                <div class="column"><a class="button btn-cancel" href="#poex02">キャンセル</a></div>
+                <div class="column"><a class="button btn-ok">確認</a></div>
+            </div>
+            <!-- end .poex-item-info -->
+        </div>
+    </div>
+</div>

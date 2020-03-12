@@ -1,0 +1,128 @@
+//////// FROM CSS ////////
+//
+#APP-TOP{
+
+}
+
+#APP-TOP .titleContainer{
+	display: table;
+	height: 240px;
+	width: 100%;
+	background: url(../image/top/img_logo_bg.jpg) center top no-repeat;
+	background-size: 100%;
+
+}
+#APP-TOP .titleContainer h1{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 30px;
+}
+
+#APP-TOP .menuContainer{}
+
+	#APP-TOP .menuContainer .btnM{
+		font-size: 13px;
+	}
+	#APP-TOP .menuContainer .btnS{
+		font-size: 12px;
+	}
+
+	/* column1 */
+	#APP-TOP .menuContainer .menuColumn1{
+		width: 100%;
+		border-top: 1px solid;
+	}
+		#APP-TOP .menuContainer .menuColumn1 a{
+		}
+			#APP-TOP .menuContainer .menuColumn1 a .pointInformation{
+				float: left;
+				width: 60%;
+				padding: 15px 0 0;
+				text-align: center;
+			}
+				#APP-TOP .menuContainer .menuColumn1 a .pointInformation p{
+					padding: 0 0 5px;
+					margin: 0px;
+					font-size: 9px;
+				}
+				#APP-TOP .menuContainer .menuColumn1 a .pointInformation p.pointValue{
+					font-size: 40px;
+					color: #ff8c11;
+				}
+			#APP-TOP .menuContainer .menuColumn1 a div.pointUse{
+				float: left;
+				width: 40%;
+				padding: 40px 0 0;
+				font-size: 16px;
+				text-align: left;
+			}
+			#APP-TOP .menuContainer .menuColumn1 a div.pointBarcode{
+				clear: both;
+				text-align: center;
+				padding: 0px 0 15px;
+			}
+
+	/* column2 */
+	#APP-TOP .menuContainer .menuColumn2{
+		clear: both;
+		width: 100%;
+		height: 50px;
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+	}
+		#APP-TOP .menuContainer .menuColumn2 a{
+			display: block;
+			float: left;
+			width: 49.5%;
+			border-right: 1px solid;
+		}
+		#APP-TOP .menuContainer .menuColumn2 a:last-child{
+			border-right: 0px solid;
+		}
+			#APP-TOP .menuContainer .menuColumn2 a p{
+				display: inline;
+				width: 100%;
+
+			}
+
+	/* column3 */
+	#APP-TOP .menuContainer .menuColumn3{
+		clear: both;
+		width: 100%;
+		border-top: 1px solid;
+	}
+		#APP-TOP .menuContainer .menuColumn3 a{
+			display: block;
+			float: left;
+			padding: 15px 0;
+			width: 33%;
+			border-right: 1px solid;
+			text-align: center;
+		}
+		#APP-TOP .menuContainer .menuColumn3 a:last-child{
+			border-right: 0px solid;
+		}
+			#xAPP-TOP .menuContainer .menuColumn3 a .svgContainer{
+				display: block;
+				margin: 15px auto;
+				height: 35px;
+			}
+			#APP-TOP .menuContainer .menuColumn3 a p{
+				display: inline;
+				width: 100%;
+
+			}
+	.menuFooter a{
+		text-align: center;
+	}
+		.menuFooter a div{
+			display: inline;
+		}
+			.menuFooter a div img{
+				vertical-align: middle;
+			}
+		.menuFooter a p{
+		}
+
+

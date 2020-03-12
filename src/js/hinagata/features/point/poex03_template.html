@@ -1,0 +1,37 @@
+<div class="point-exchange point-exchange-type">
+    <div class="poex-container">
+        <h2 class="poex-title">交換元のポイントを選択</h2>
+        <div class="poex-content">
+            <div class="poex-item-selected">
+                <table>
+                    <tr>
+                        <td class="image"><img src="<%- itemSelected.logo %>" /></td>
+                        <td class="button"><span class="poex-point"><span class="number"><%- App.util.text.numberWithDelimiter(itemSelected.point) %></span> pt</span></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- end .poex-item-selected -->
+            <div class="arrow-down"></div>
+            <!-- end .arrow-bottom -->
+            <ul class="poex-list">
+
+                <% _.each(AppConf.pointExchange.list, function(item) { %>
+
+                <% if(item.group !== 2) return false; %>
+
+                <li class="poex-item js-poexItem" data-id="<%- item.id %>">
+                    <table>
+                        <tr>
+                            <td class="image"><img src="<%- item.logo %>" /></td>
+                            <td class="title"><%- item.title %></td>
+                            <td class="button"><span class="poex-point"><span class="number"><%- App.util.text.numberWithDelimiter(item.point) %></span> pt</span></td>
+                        </tr>
+                    </table>
+                </li>
+
+                <% }) %>
+
+            </ul>
+        </div>
+    </div>
+</div>

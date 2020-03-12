@@ -1,0 +1,29 @@
+#CHIRASHI-LIST li{
+	padding: 20px 20px;
+	text-align: center;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+}
+
+#CHIRASHI-LIST li .row{
+	background: url(../image/common/arrow.svg) no-repeat right center;
+	background-size: 4% 22%;
+}
+
+
+
+#CHIRASHI-LIST .chirashiImg{
+	display: inline-block;
+	overflow: hidden;
+	width: 60%;
+	height: 150px;
+}
+
+#CHIRASHI-LIST .chirashiImg img{
+	max-width: 100%;
+}
+
+#CHIRASHI-LIST .chirashiText{
+	margin-top: 15px;
+	font-size: 14px;
+}

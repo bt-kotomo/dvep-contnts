@@ -1,0 +1,30 @@
+		<div class="title ftcolor1"><%= name %></div>
+		<div class="aim ftcolor3"><%= App.util.text.nl2br( informationText ) %></div>
+<!--
+		<a href="#coupon?shop_id=<%= id %>"><button type="button" class="coupon_btn btbgcolor1 btftcolor1">このお店で使えるクーポンはこちら！</button></a>
+-->
+		<img class="map" src="http://map.olp.yahooapis.jp/OpenLocalPlatform/V1/static?appid=t0nKLeGxg6471KWgS6f4cfCSKfhaRXrBPTKTfW1Ktk.ISmDMy_LxmgiY2SE.3kdt&amp;lat=<%= latitude %>&amp;lon=<%= longitude %>&amp;pin=<%= latitude %>,<%= longitude %>&amp;width=500&amp;height=500&amp;z=16">
+		<div class="address ftcolor3"><%= address1 %><%= address2 %></div>
+		<button type="button" class="map-btn btbdcolor1 btftcolor2">地図アプリを起動</button>
+		<div class="route ftcolor3"><%= App.util.text.nl2br( routeInfoText ) %></div>
+		<button type="button" class="route-btn btbdcolor1 btftcolor2">ルート案内を開始</button>
+
+
+<% if(tel) {%>
+	<div class="telephone ftcolor3"><%= tel %></div>
+	<a href="tel:<%= tel %>"><button type="button" class="call-btn btbdcolor1 btftcolor2"><%= tel %>に電話</button></a>
+<% } %>
+
+<% if(holiday) {%>
+	<div class="holiday">定休日:<%= App.util.text.nl2br( holiday ) %></div>
+<% } %>
+<% if(openCloseTimeText) {%>
+	<div class="worktime"><%= App.util.text.nl2br( openCloseTimeText ) %></div>
+<% } %>
+
+<% if(mobileText) {%>
+		<div class="reception"><%= App.util.text.nl2br( mobileText ) %></div>
+<% } %>
+<% if(parkText) {%>
+<div class="parking"><%= App.util.text.nl2br( parkText ) %></div>
+<% } %>

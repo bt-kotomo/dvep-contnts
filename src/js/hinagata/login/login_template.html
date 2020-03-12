@@ -1,0 +1,13 @@
+<div id="LOGIN">
+	<label for="user-id">メールアドレス</label>
+		<input type="text" name="user-id" id="user-id">
+		<label for="password">パスワード</label>
+		<input type="password" name="password" id="password">
+		<button type="button" class="login-btn btbgcolor1 btftcolor1">ログイン</button>
+		<a href="<%= App.util.text.addUrlParameters(AppConf.url.forgetPassword, ['_native_open_embedded']) %>" class="forget ftcolor2">パスワードを忘れた方はコチラ</a>
+		<a href="#menuRegis" class="singup btbdcolor1 btftcolor2">新規会員登録へ</a>		
+	<span class="cancel-btn">会員登録をスキップ</span>
+	<p class="instruction ftcolor2">※会員登録をスキップすると、<br>
+	クーポン・ポイントの機能が制限されます。</p>
+</div>
+<%= App.util.injectProgressScreenDom()  %>

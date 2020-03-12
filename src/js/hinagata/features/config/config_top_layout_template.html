@@ -1,0 +1,41 @@
+<div id="CONFIG-TOP" class="BACKBONE-PAGE">
+
+<div class="bgcolor3 ftcolor1">
+	<ul>
+
+		<% if( App.appModel.getAuthInfo().token !== "" ){ %>
+			<li class="bdcolor1" id=""><a href="#poex01">ポイント交換</a></li>
+			<li class="bdcolor1" id="update-user-btn"><a>会員情報変更</a></li>
+		<% } %>
+
+		<!-- <li class="bdcolor1"><a href="<%= App.util.text.addUrlParameters(AppConf.url.term, ['_native_open_embedded']) %>">利用規約</a></li> -->
+		<li class="bdcolor1"><a href="<%= App.util.text.addUrlParameters(AppConf.url.privacyPolicy, ['_native_open_embedded']) %>">プライバシーポリシー</a></li>
+		<li class="bdcolor1"><a href="<%= App.util.text.addUrlParameters(AppConf.url.membershipTerms, ['_native_open_external']) %>">会員規約</a></li>
+		<li class="bdcolor1"><a href="./features/tutorial/tutorial.html">使い方を見る</a></li>
+		<li class="WDCserial hide bdcolor1" id="wdc-btn"><a >WDCシリアル登録</a></li>
+
+		<% if( App.appModel.getAuthInfo().token !== "" ){ %>
+			<% if( AppConf.features.autoregist ){ %>
+				<% if( AppConf.features.sms ){ %>
+				<li class="bdcolor1"><a href="#loginSms">別なアカウントでログイン</a></li>
+				<% } else { %>
+				<li class="bdcolor1"><a href="#login">別なアカウントでログイン</a></li>
+				<% } %>
+			<% }else{ %>
+				<li class="bdcolor1"><span id="logout-btn">ログアウト</span></li>
+			<% } %>
+		<% }else{ %>
+			<% if( AppConf.features.sms ){ %>
+			<li class="bdcolor1"><a href="#loginSms">ログイン</a></li>
+			<% } else { %>
+			<li class="bdcolor1"><a href="#login">ログイン</a></li>
+			<% } %>
+		<% } %>
+		<li class="bdcolor1"><a href="#history">利用履歴</a></li>
+
+	</ul>
+</div>
+
+
+</div>
+<%= App.util.injectProgressScreenDom()  %>

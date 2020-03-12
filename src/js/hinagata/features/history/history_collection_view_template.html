@@ -1,0 +1,28 @@
+
+<ol>
+	<li class="bgcolor4 ftcolor5 coupon-head HIDE">
+		<div class="row">
+			<div class="left_header col1">利用日時</div>
+			<div class="mid_header bdcolor2 col2">利用クーポン名</div>
+			<div class="right_header col3">利用店名</div>
+		</div>
+	</li>
+	<li class="bgcolor4 ftcolor5 stamp-head HIDE">
+		<div class="row">
+			<div class="left_header col1">取得日時</div>
+			<div class="mid_header bdcolor2 col4">取得店名</div>
+		</div>
+	</li>
+	<li class="bgcolor4 ftcolor5 point-head HIDE">
+		<div class="row">
+			<div class="left_header col1">利用日時</div>
+			<div class="mid_header bdcolor2 col2">収支</div>
+		<% if( AppConf.features.smart ){ %>
+			<div class="right_header col3">取引種別</div>
+		<% } else { %>
+			<div class="right_header col3">利用店名</div>
+		<% } %>
+		</div>
+	</li>
+</ol>
+<ol class="history-list"></ol>

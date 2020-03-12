@@ -1,0 +1,126 @@
+<div id="APP-TOP" class="BACKBONE-PAGE" style="margin-top: -44px;">
+  <div class="cf">
+    
+    <% if( AppConf.features.slideshow ){ %>
+      <div id="havedata" class="sliderImages">
+        <div class="slickSlider"></div>
+      </div>
+      <div id="nodata" class="inner-top hide">
+        <img class="logo-center" src="./image/top/logo.png">
+      </div>
+    <% }else{ %>
+      <div class="inner-top">
+        <img class="logo-center" src="./image/top/logo.png">
+        <div class="topBg">
+          <img src="<%= AppConf.slideshow.slideshowContentsList[0].imageUrl %>">
+        </div>
+      </div>
+      <!-- /.topBg -->
+    <% } %>
+
+    <div class="menuContainer">
+
+      <% if( App.appModel.getAuthInfo().token !== "" ){ %>
+        <a href="#member">
+          <div class="pointArea <% if (applican.config.device_os === "IOS"){ %>ios_Area<%}%> cf">
+            <div class="pointRight">
+              <img id="memberCard" src="./image/member/empty_sm.png" alt="">
+            </div>
+            <div class="pointLeft">
+              <h2><span class="point-value">0</span></h2> 
+              <span class="unit">pt</span> 
+              <div class="point_icon"><img src="./image/top/icon_row.png" /></div>
+              <p>会員カード<br />を表示する</p>        
+            </div>    
+          </div>
+        </a>
+      <% }else{ %>
+        <div class="button-group <% if (applican.config.device_os === "IOS"){ %>ios_Area<%}%>">
+          <a href="#login" class="btn-common login">ログインする</a>
+          <a href="#menuRegis" class="btn-common regis-user">会員登録をする</a>
+        </div>
+      <% } %>
+
+      <div class="menuBody">
+
+        <div class="menuColumn3 bdcolor2 cf">
+          <a href="#coupon">
+            <div class="menuBlock">
+              <div class="svgContainer">
+                <img src="./image/top/icon_coupon.png" width="50px" height="50px" alt=""/>
+              </div>
+              <p class="btnM ftcolor5 bdcolor1">クーポン</p>
+            </div>
+          </a>
+          <a href="#information">
+            <div class="menuBlock">
+              <div class="svgContainer">
+                <img src="./image/top/icon_information.png" width="50px" height="50px" alt=""/>
+              </div>
+              <p class="btnM ftcolor5 bdcolor1">お知らせ</p>
+              <span class="badge-number"></span>
+            </div>
+          </a>
+          <a href="<%= App.util.text.addUrlParameters(AppConf.url.website, ['_native_open_embedded']) %>">
+            <div class="menuBlock">
+              <div class="svgContainer">
+                <img src="./image/top/icon_website.png" width="50px" height="50px" alt=""/>
+              </div>
+              <p class="btnM ftcolor5 bdcolor1">公式サイト</p>
+            </div>
+          </a>      
+        </div>
+
+        <div class="menuColumn3 bdcolor2 cf">
+          <a id='orderIcon' href="<%= App.util.text.addUrlParameters(AppConf.url.onlineshop, ['_native_open_embedded']) %>">
+            <div class="menuBlock">
+              <div class="svgContainer">
+                <img src="./image/top/icon_ec.png" width="50px" height="50px" alt=""/>
+              </div>
+              <p class="btnM ftcolor5 ftcolor1">オンラインショップ</p>
+            </div>
+          </a> 
+          <a  href="<%= App.util.text.addUrlParameters(AppConf.url.order, ['_native_open_embedded']) %>">
+            <div class="menuBlock">
+              <div class="svgContainer">
+                <img src="./image/top/icon_order.png" width="50px" height="50px" alt=""/>
+              </div>
+              <p class="btnM ftcolor5 bdcolor1">レストラン予約</p>
+            </div>
+          </a>
+          <a href="#history">
+            <div class="menuBlock">
+              <div class="svgContainer">
+                <img src="./image/top/icon_history.png" width="50px" height="50px" alt=""/>
+              </div>
+              <p class="btnS ftcolor1 bdcolor1">利用履歴</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="menuFooter">
+        <div class="menuColumn2 bdcolor1">
+          <a href="#sns">
+            <div class="menuBlock">
+              <div class="svgContainer">
+                <img src="./image/top/icon_sns.png" width="45px" height="45px" alt=""/>
+              </div>
+              <p class="btnS ftcolor1 bdcolor1">SNS</p>
+            </div>
+          </a>
+          <a href="#config">
+            <div class="menuBlock">
+              <div class="svgContainer">
+                <img src="./image/top/icon_config.png" width="45px" height="45px" alt=""/>
+              </div>
+              <p class="btnS ftcolor1 bdcolor1">設定</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div> <!-- /.menuContainer -->
+  </div>
+</div> <!-- /#APP-TOP -->

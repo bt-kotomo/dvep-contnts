@@ -1,0 +1,244 @@
+.cl-brown {
+	color: #984908;
+	padding-right: 10px;
+}
+
+#SMART-MAIN .pointBarcode {
+	text-align: center;
+	padding: 10px 0;
+}
+
+#SMART-MAIN .smart_status{
+	padding: 10px 20px 5px 20px;
+}
+#MEMBER-DETAIL .smart_status {
+	padding: 0 0 5px 0;
+	margin-top: -1px;
+}
+
+#SMART-MAIN .current_smart, #MEMBER-DETAIL .current_smart {
+	position: relative;
+	padding-top: 17px;
+	padding-bottom: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #984908;
+}
+#MEMBER-DETAIL .current_smart{
+	color: #1b232a;
+	margin: 0 20px;
+	padding: 5px 0;
+}
+#MEMBER-DETAIL .total_smart{
+	color: #1b232a;
+	margin: 0 20px;
+	padding: 5px 0;
+}
+#MEMBER-DETAIL .current_change{
+	margin: 0 20px;
+	padding-bottom: 05px;
+}
+
+#SMART-MAIN .smart-text, #MEMBER-DETAIL .smart-text {
+	font-size: 30px;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+
+#SMART-MAIN .smartmoney-text, #MEMBER-DETAIL .smartmoney-text {
+	font-size: 30px;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+#MEMBER-DETAIL .text{
+	font-size: 15px;
+	position: relative;
+	padding-bottom: 03px;
+}
+
+#SMART-MAIN .smartpoint-text, #MEMBER-DETAIL .smartpoint-text {
+	font-size: 25px;
+	position: absolute;
+	top: 13px;
+	right: 0;
+}
+
+#SMART-MAIN .condition {
+	display: table-row;
+	font-size: 9px;
+}
+
+#SMART-MAIN .condition_title {
+	display: table-cell;
+	padding-left: 20px;
+	background: url(../image/common/check.svg) no-repeat left top;
+	background-size: 16px auto;
+}
+
+#SMART-MAIN .condition_words {
+	padding-left: 10px;
+	line-height: 14px;
+}
+
+#SMART-MAIN #card_info {
+	border-bottom: 1px dotted;
+	background-color: $bronzeColor;
+
+	padding: 15px 0px 15px 0px;
+}
+
+#SMART-MAIN .card-text {
+	padding: 0px 20px 0px 20px;
+
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#SMART-MAIN .cardnum-text {
+	margin: 0px 0px 0px 25px;
+	font-size: 27px;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: left;
+	color: #fff;
+}
+
+#SMART-MAIN .pinnum-text {
+	margin: 0px 0px 0px 25px;
+	font-size: 27px;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: left;
+	color: #fff;
+}
+
+#SMART-MAIN .current_charge, #MEMBER-DETAIL .current_charge {
+	position: relative;
+	padding-top: 17px;
+	padding-bottom: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+#SMART-MAIN .charge-text, #MEMBER-DETAIL .charge-text {
+  font-size: 30px;
+  font-weight: bold;
+}
+#MEMBER-DETAIL .charge-text, #MEMBER-DETAIL .charge-limit, #MEMBER-DETAIL .smartpoint-text {
+	color: #1b232a
+}
+
+#SMART-MAIN .charge-limit, #MEMBER-DETAIL .charge-limit {
+  font-size: 13px;
+  font-weight: normal;
+  text-align: right;
+}
+
+.value-div1 {
+  	float: left;
+	width: 100px;
+  	font-size: 14px;
+  	line-height: 30px;
+  	font-weight: bold;
+  	border: 1px;
+}
+
+.value-div2 {
+  overflow: hidden;
+  text-align: right;
+}
+
+.total-text {
+  	float: left;
+	width: 140px;
+  	font-size: 14px;
+  	line-height: 30px;
+  	font-weight: bold;
+  	border: 1px;  	
+}
+
+.total-value {
+  overflow: hidden;
+  text-align: right; 
+}
+
+#SMART-MAIN #button-region, #MEMBER-DETAIL #button-region {
+	padding: 10px 20px 5px 20px;
+	text-align: center;
+}
+
+#SMART-MAIN .history_btn, #MEMBER-DETAIL .history_btn {
+	width: 100%;
+	white-space: nowrap;
+	letter-spacing: -0.05em;
+	border-radius: 5px;
+	height: 44px;
+	font-size: 16px;
+	border: none;
+	font-weight: bold;
+}
+
+
+/*@media only screen and (min-height: 510px) and (max-height: 600px) {
+
+	.bg_cardmem .inner_card .code_cardmem #member-id-string{
+		font-size: 20px;
+	}
+
+	#SMART-MAIN .current_smart, #MEMBER-DETAIL .current_smart{
+		font-size: 13px;
+	}
+	#SMART-MAIN .smartpoint-text, #MEMBER-DETAIL .smartpoint-text{
+		font-size: 20px;
+		top: 15px;
+	}
+	#SMART-MAIN .charge-text, #MEMBER-DETAIL .charge-text{
+		font-size: 25px;
+	}
+	#SMART-MAIN .charge-limit, #MEMBER-DETAIL .charge-limit{
+		font-size: 11px;
+	}
+
+}*/
+@media only screen and (min-height: 510px) and (max-height: 600px) {
+	.total-text {
+		width: 130px;
+	}
+	#SMART-MAIN .charge-text, #MEMBER-DETAIL .charge-text{
+		font-size: 22px;
+	}
+	#MEMBER-DETAIL .total_smart{
+		padding: 5px 0;
+	}
+}
+@media only screen and (min-height: 450px) and (max-height: 500px) {
+
+	.total-text {
+		width: 130px;
+	}
+	#MEMBER-DETAIL .total_smart{
+		padding: 0 0;
+	}
+	.bg_cardmem .inner_card .code_cardmem #member-id-string{
+		font-size: 18px;
+	}
+
+	#SMART-MAIN .current_smart, #MEMBER-DETAIL .current_smart{
+		font-size: 13px;
+	}
+	#SMART-MAIN .smartpoint-text, #MEMBER-DETAIL .smartpoint-text{
+		font-size: 20px;
+		top: 15px;
+	}
+	#SMART-MAIN .charge-text, #MEMBER-DETAIL .charge-text{
+		font-size: 20px;
+	}
+	#SMART-MAIN .charge-limit, #MEMBER-DETAIL .charge-limit{
+		font-size: 11px;
+	}
+
+}

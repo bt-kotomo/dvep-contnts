@@ -1,0 +1,26 @@
+<div class="overlay OPACITY-TRANSITION bgcolor4">
+		<div class="contents bgcolor3">
+
+
+<% if( type === "stamp" ){ %>
+		<div class="msg ftcolor1 bdcolor1">スタンプをGET！</div>
+<% } %>
+<% if( type === "point" ){ %>
+<div class="msg ftcolor1 bdcolor1"><%= point %>ポイント<br>獲得しました!!</div>
+<% } %>
+<% if( type === "coupon" ){ %>
+		<div class="msg ftcolor1 bdcolor1">スペシャルクーポンを<br>獲得しました!!</div>
+<% } %>
+
+		<div class="get_date ftcolor1">取得日時：<%= timestamp %></div>
+<% if( type === "coupon" ){ %>
+		<div><a href="#coupon/<%= couponId %>?uCoupId=<%= uCoupId %>"><button class="use-coupon-btn btbgcolor1 btftcolor1" type="button">このクーポンを使う</button></a></div>
+<% } %>
+<% if( type === "point" ){ %>
+		<div><a href="#point"><button class="btbgcolor1 btbdcolor1 btftcolor1" type="button">ポイントを使う</button></a></div>
+<% } %>
+		<div><button class="show-coupon-btn btbgcolor2 btbdcolor1 btftcolor2" type="button">クーポン一覧を見る</button></div>
+		<div><button class="close-btn btbgcolor2 btbdcolor1 btftcolor2" type="button">閉じる</button></div>
+		</div>
+</div>
+

@@ -1,0 +1,39 @@
+<!-- CouponMasterModel : with attribute "userPoint" -->
+<div id="exchange-status" class="hlbgcolor2">
+</div>
+
+<div><!-- CouponMasterModel : with attribute "userPoint" -->
+	<div class="box_img_detail"><img src="<%= couponImageUrl %>"></div>
+	<div class="point_title ftcolor1"><%= pageTitle %></div>
+	<div class="point_detail ftcolor3"><%= App.util.text.nl2br( detailText ) %></div>
+	<dl>
+		<dt class="point_cost_title ftcolor1">交換に必要なポイント</dt>
+		<dd class="point_price hlftcolor3"><%= exchangePoint %><span class="point_price_words ftcolor3">ポイント（使用後：<%= userPoint - exchangePoint %>ポイント）</span></dd>
+<% if( usePeriodType + "" === "0" ){ %>
+		<dt class="point_time_title ftcolor1">利用期間</dt>
+		<dd class="ftcolor3"><%= formatDate( usePeriodStartDate ) %> ～ <%= formatDate( usePeriodEndDate ) %></dd>
+<% }else{ %>
+		<dt class="point_time_title ftcolor1">有効期限</dt>
+		<dd class="ftcolor3">発行日より<%=  usePeriodValue  %>日</dd>
+<% } %>
+
+		<dt class="point_check_title ftcolor1">利用条件</dt>
+<% if( useCondNumber  ){ %>
+		<dd class="ftcolor3">回数制限:合計<%= useCondNumber %>回まで利用可能</dd>
+<% } %>
+<% if( useCondLimit  ){ %>
+	<dd class="ftcolor3">先着<%= useCondLimit %>名まで利用可能</dd>
+<% } %>
+
+		<dt class="point_attention_title ftcolor1">備考・注意事項</dt>
+		<dd class="ftcolor3"><%= App.util.text.nl2br( note ) %></dd>
+	</dl>
+	<div class="btn_area">
+		<button type="button" id="exchange-coupon-btn" class="btbgcolor1 btftcolor1">ポイントをこのクーポンと交換する</button>
+	</div>
+</div>
+
+
+
+
+

@@ -1,0 +1,21 @@
+<% if( imageUrl ){ %>
+	
+	<% if( linkUrl ){ %>
+		
+		<% if( webviewFlag  + "" === "1" ){ %>
+			<% if( linkUrl.indexOf("?")  > 0 ){ %>
+				<a href="<%= linkUrl %>&_native_open_embedded"><img src="<%= imageUrl %>" /></a>
+			<% }else{ %>
+				<a href="<%= linkUrl %>?_native_open_embedded"><img src="<%= imageUrl %>" /></a>
+			<% } %>
+		<% }else{ %>
+			<a href="<%= linkUrl %>"><img src="<%= imageUrl %>" /></a>
+		<% } %>
+
+	<% }else{ %>
+		<img src="<%= imageUrl %>" />
+	<% } %>
+
+<% }else{ %>
+	<img src="./image/top/logo.png">
+<% } %>

@@ -1,0 +1,104 @@
+@import "./../mixin";
+
+/* 
+ * Declare variable CSS for images coupon
+ */
+
+$w_imgInfo : 90px;
+$h_imgInfo : 90px;
+
+//////// FROM CSS ////////
+#INFORMATION-LIST{}
+
+#INFORMATION-LIST .INFORMATION-LIST li {
+	padding: 15px 20px 15px 20px;
+	min-height: 90px;
+	border-bottom: 1px dotted;
+}
+
+#INFORMATION-LIST .INFORMATION-LIST .row {
+	height: 90px;
+}
+
+#INFORMATION-LIST .INFORMATION-LIST .box_images {
+  @include applySize($w_imgInfo, $h_imgInfo);
+  float: left;
+  margin-right: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+#INFORMATION-LIST .INFORMATION-LIST img {
+	@include middleImg();
+	height: 100%;
+   	width: 100%;
+   	object-fit: contain;
+}
+
+#INFORMATION-LIST .coupon_info {
+	margin-left: 90px;
+	padding-right: 15px;
+	background: url(../image/common/arrow.svg) no-repeat right center;
+	background-size: 4% 22%;
+}
+
+#INFORMATION-LIST .NEWEST-MARK {
+	margin-left: 8px;
+	padding: 3px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#INFORMATION-LIST .info_date {
+	font-size: 12px;
+}
+
+#INFORMATION-LIST .coupon_name {
+	padding-top: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+#INFORMATION-LIST .hide_this {
+	display: none !important;
+}
+
+#INFORMATION-DETAIL #information-main-region {
+	padding: 20px;
+}
+
+#INFORMATION-DETAIL img {
+	width: 100%;
+}
+
+#INFORMATION-DETAIL a {
+	padding-bottom: 5px;
+	font-size: 12px;
+	border-bottom: 1px solid;
+}
+
+#INFORMATION-DETAIL .info_date {
+	font-size: 12px;
+}
+
+#INFORMATION-DETAIL .info_title {
+	padding-top: 12px;
+	padding-bottom: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+	border-bottom: 1px dotted;
+}
+
+#INFORMATION-DETAIL .info_words {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 12px;
+}
+
+#INFORMATION-DETAIL .info_link {
+	padding-top: 10px;
+}
+
+

@@ -1,0 +1,329 @@
+$main_cl: #1b325f;
+$cl_text: #1c3e7d;
+//root
+.point-exchange{
+    height: 100%;
+    .poex-container{
+        height: 100%;
+        overflow-y: auto;
+        padding-bottom: 20px;
+    }
+    *{
+        &,
+        &::before,
+        &::after{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .poex-content{
+        padding: 0 20px;
+    }
+    .poex-title{
+        text-align: center;
+        font-weight: bold;
+        padding: 40px 0 30px;
+    }
+    .poex-point{
+        white-space: nowrap;
+    }
+    .poex-item-selected{
+        background-color: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 20px 30px;
+        box-shadow: 0px 3px 5px rgba(#000, .1);
+        table{
+            width: 100%;
+            td{
+                vertical-align: middle;
+                &.image{
+                    width: 100px;
+                }
+                &.button{
+                    color: #000;
+                    text-align: right;
+                    white-space: nowrap;
+                    font-size: 30px;
+                    .poex-subpoint ~ .poex-point{
+                        color: gray;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .poex-item-info{
+        background-color: $main_cl;
+        padding: 15px 30px;
+        margin-bottom: 20px;
+        .poex-wrap{
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 10px;
+            box-shadow: 0px 3px 5px rgba(#000, .1);
+        }
+        .text{
+            text-align: center;
+            //margin-bottom: 20px;
+            font-size: 18px;
+            color: $cl_text;
+        }
+        table{
+            width: 100%;
+            &.style-1{
+                td{
+                    width: 50%;
+                    img{
+                        //margin-bottom: 20px;
+                    }
+                    .poex-point{
+                        font-size: 24px;
+                    }
+                }
+            }
+            &.style-2{
+                td{
+                   &.item{
+                       width: 45%;
+                   }
+                   &.equal{
+                       width: 10%;
+                       font-size: 36px;
+                   }
+                   .poex-point{
+                        font-size: 30px;
+                    }
+                }
+            }
+            td{
+                text-align: center;
+                color: gray;
+                img{
+                    display: initial;
+                    height: auto;
+                    width: 60%;
+                }
+            }
+        }
+    }
+    .poex-item-compare{
+        background-color: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 10px;
+        margin-bottom: 40px;
+        box-shadow: 0px 3px 5px rgba(#000, .1);
+        .text{
+            text-align: center;
+            font-size: 18px;
+            color: $cl_text;
+        }
+        table{
+            width: 100%;
+            td{
+                text-align: center;
+                vertical-align: middle;
+                font-size: 25px;
+                color: gray;
+                &.item{
+                    width: 45%;
+                    img{
+                        display: initial;
+                        height: auto;
+                        width: 50%;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+    .poex-item{
+        background-color: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 10px 15px 10px 10px;
+        box-shadow: 0px 3px 5px rgba(#000, .1);
+        table{
+            width: 100%;
+            min-height: 44px;
+            td{
+                vertical-align: middle;
+                font-weight: bold;
+                font-size: 14px;
+                &.image{
+                    width: 25%;
+                }
+                &.title{
+                    padding: 0 10px;
+                    color: rgba(#000, .8);
+                }
+                &.button{
+                    color: #000;
+                    text-align: right;
+                    white-space: nowrap;
+                    width: 75px;
+                    .poex-subpoint{
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                        & + .poex-point{
+                            color: gray;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .poex-list{
+        .poex-item{
+            margin-bottom: 15px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .poex-bottom{
+        .button{
+            display: table;
+            margin: 0 auto;
+            color: #fff;
+        }
+        .btn-recent{
+            text-decoration: underline;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        .btn-poex{
+            padding: 11px 20px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            background-color: rgb(0, 176, 240);
+            border: 1px solid rgb(0, 176, 240);
+            border-radius: 5px;
+        }
+    }
+    .arrow-down {
+        width: 0;
+        height: 0;
+        margin: 15px auto;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-top: 30px solid $cl_text;
+    }
+    .poex-form{
+        margin-bottom: 40px;
+        .text{
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: $cl_text;
+        }
+        .control{
+            width: 80%;
+            position: relative;
+            margin: 0 auto;
+            input{
+                width: 100%;
+                height: 50px;
+                padding: 0 10px;
+                border-radius: 10px;
+                border: 1px solid #000;
+                outline: none;
+                font-size: 40px;
+                text-align: right;
+            }
+            .unit{
+                position: absolute;
+                right: -25px;
+                bottom: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+    .poex-btns{
+        width: 100%;
+        display: table;
+        .column{
+            float: left;
+            padding: 0 10px;
+            width: 50%;
+        }
+        .button{
+            display: block;
+            text-align: center;
+            padding: 11px 0;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+            border-width: 1px;
+            border-style: solid;
+            line-height: 20px;
+            &.btn-cancel{
+                border-color: #000;
+            }
+            &.btn-ok{
+                background-color: rgb(0, 176, 240);
+                border-color: rgb(0, 176, 240);
+                color: #fff;
+            }
+        }
+    }
+}
+
+//link
+.point-exchange.point-exchange-link{
+    background-color: rgb(27, 50, 95);
+    .poex-title{
+        color: #fff;
+        font-size: 26px;
+    }
+}
+
+//type
+.point-exchange.point-exchange-type{
+    background-color: rgb(245, 246, 245);
+    .poex-title{
+        color: $cl_text;
+        font-size: 20px;
+    }
+}
+
+.point-exchange.point-exchange-process{
+    .heading{
+        color: $cl_text;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+#poex01{
+    .poex-item{
+        .poex-point{
+            .number{
+                display: none;
+            }
+            .notnumber{
+                display: initial;
+            }
+        }
+        &.active{
+            .poex-point{
+                .number{
+                    display: initial;
+                }
+                .notnumber{
+                    display: none;
+                }
+            }
+        }
+    }
+}

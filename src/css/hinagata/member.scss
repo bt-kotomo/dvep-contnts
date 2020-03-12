@@ -1,0 +1,144 @@
+#MEMBER-DETAIL .coupon_title {
+    padding: 20px 20px 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.box-bar-code {
+	margin: 0 auto;
+	padding: 4px 20px 0 20px;
+	.inner-bar-code {
+		padding: 0 0 10px;
+		background-color: #fff;
+		border-top: 1px dotted #000;
+		border-bottom: 1px dotted #000;
+	}
+}
+#member-id-barcode {
+	margin-top: 10px;
+}
+.bg_cardmem{
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+	padding-top: 18px;
+	.inner_card {
+		width: 90%;
+		position: relative;
+		text-align: center;
+		margin: 0 auto;
+		img {
+			border-radius: 20px; 
+			width: 94%; 
+			/*box-shadow: 0px 0px 7px rgba(36, 20, 8, 0.38);*/
+		}
+		.code_cardmem {
+			width: 100%;
+			text-align: center;
+			margin: 0 auto;
+			padding: 05px 0 08px 0;
+			.bg_code{
+				/*padding: 1px 15px;*/
+			}
+			#member-id-string, .txtrank {
+				font-size: 22px;
+				color: #666;
+				font-weight: bold;
+			}
+		}
+	}
+}
+.box_code{
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+    margin: 0 20px;
+    padding-bottom: 15px;
+	.qr_member {
+		width:40%;
+		margin-top:15px;
+	}
+}
+#MEMBER-DETAIL .box-bar-code .inner-bar-code {
+	border: none !important;
+	background: none !important;
+}
+.mem_note {
+	font-size: 11px;
+    text-align: center;
+}
+
+.member_change {
+	background: #1b232a;
+	padding: 05px 05px 05px 20px;
+	color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.text{
+	font-size: 20px;
+	position: relative;
+	bottom: 3px;
+}
+
+/*@media only screen and (min-height: 700px) and (max-height: 750px) {
+	.bg_cardmem .inner_card .code_cardmem {
+	    bottom: 50px;
+	}
+	#member-id-string {
+	    font-size: 22px;
+	}
+	.bg_cardmem .inner_card .code_cardmem .bg_code {
+		padding: 1px 25px;
+	}
+	.mem_note {
+		font-size: 15px;
+	}
+	#MEMBER-DETAIL .smart_status {
+		margin-top: -4px;
+	}
+}
+
+@media only screen and (min-height: 610px) and (max-height: 700px) {
+	.mem_note {
+		font-size: 13px;
+	}
+}
+
+@media only screen and (min-height: 560) and (max-height: 600px) {
+	.mem_note {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-height: 500px) and (max-height: 600px) {
+	#member-id-string {
+	    font-size: 18px;
+	}
+	.bg_cardmem .inner_card .code_cardmem {
+	    bottom: 38px;
+	}
+	.mem_note {
+		font-size: 11px;
+	}
+	.member_change{
+		font-size: 12px;
+	}
+}*/
+
+@media only screen and (min-height: 450px) and (max-height: 500px) {
+	#member-id-string {
+	    font-size: 18px;
+	}
+	.bg_cardmem .inner_card .code_cardmem {
+	    bottom: 38px;
+	}
+	.mem_note {
+		font-size: 10px;
+	}
+	.member_change{
+		font-size: 12px;
+	}
+}
+

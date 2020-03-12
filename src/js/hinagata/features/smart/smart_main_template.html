@@ -1,0 +1,65 @@
+<div id="SMART-MAIN" class="BACKBONE-PAGE bgcolor1">
+
+<div id="card_info">
+	<div class="card-text">カード番号</div>
+	<div class="cardnum-text"></div>
+<!-- 	<div class="card-text">カード番号&nbsp;:&nbsp;<span class="cardnum-text"></span></div> -->
+	<div id="pinnum">
+	<div class="card-text">PIN番号</div>
+	<div class="pinnum-text"></div>
+<!-- 	<div class="card-text">PIN番号&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;<span class="pinnum-text"></span></div> -->
+	</div>
+</div>
+
+<div id="smart-status-region" class="smart_status">
+	<div class="pointBarcode">
+    	<img id="cardnum-image" src="./image/top/img_barcode.gif" height="80" width="269" alt=""> <br>
+  	</div>
+	<div class="current_smart">合計<span class="smartmoney-text hlftcolor3">0 円</span></div>
+	<div class="current_smart">ポイント<span class="smartpoint-text hlftcolor3">0 Ｐ</span></div>
+
+	<hr style="border-bottom: 1px dotted;">
+
+	<div class="current_smart ftcolor1">ご利用可能額内訳：</div>
+	<div class="ftcolor1">
+		<div class="value-div1 ftcolor1">チャージ分</div>
+		<div class="value-div2">
+			<span id="charge-value" class="charge-text hlftcolor3">0 円</span><br>
+			<span id="charge-limit" class="charge-limit hlftcolor3"></span>
+		</div>
+	</div><br>
+
+	<div class="ftcolor1">
+		<div class="value-div1 ftcolor1">ボーナス分</div>
+		<div class="value-div2">
+			<span id="bonus-value" class="charge-text hlftcolor3">0 円</span><br>
+			<span id="bonus-limit" class="charge-limit hlftcolor3"></span>
+		</div>
+	</div><br>
+
+	<div class="ftcolor1">
+		<div class="value-div1 ftcolor1">クーポン分</div>
+		<div class="value-div2">
+			<span id="coupon-value" class="charge-text hlftcolor3">0 円</span><br>
+			<span id="coupon-limit" class="charge-limit hlftcolor3"></span>
+		</div>
+	</div><br>
+
+	<div class="ftcolor1">
+		<div class="value-div1 ftcolor1">ポイント分</div>
+		<div class="value-div2">
+			<span id="point-value" class="charge-text hlftcolor3">0 円</span><br>
+			<span id="point-limit" class="charge-limit hlftcolor3"></span>
+		</div>
+	</div><br>
+</div>
+
+
+<div id="button-region">
+	<a href="#history"><button type="button" class="history_btn btbgcolor1 btftcolor1">利用履歴を確認</button></a>
+</div>
+
+<div id="available-coupon-region" class="bgcolor1 ftcolor1">
+</div>
+</div>
+<%= App.util.injectProgressScreenDom()  %>

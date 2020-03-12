@@ -1,0 +1,635 @@
+.bdRight {
+  border-right: 1px solid #673a3a;
+}
+.bdWhite {
+  border-color: #fff;
+}
+.sliderImages{
+	img{
+		opacity: 0;
+	}
+}
+/* top  */
+#APP-TOP{
+  overflow: hidden !important;
+  background: #fff;
+  .sliderImages {
+	.slick-dots {
+		li {
+			padding: 0 2px;
+			box-sizing: border-box;
+
+			&.slick-active, &:hover, &:focus {
+				button {
+				  background: #6F625D !important;
+				}
+			}
+			button {
+				background: #EFEAE4 !important;
+				box-shadow: 0px 0px 0px 1px #6F625D;
+			}
+		}
+	}
+}
+
+}
+/* top title */
+#APP-TOP .titleContainer{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 30;
+	width: 100%;
+}
+	#APP-TOP .titleContainer h1{
+		padding: 0;
+		margin: 50px 0 0;
+		text-align: center;
+	}
+
+/* top bg */
+#APP-TOP .inner-top {
+    position: relative;
+    .logo-center{
+        width: 50% !important;
+        height: auto !important;
+        @include middleImg();
+    }
+}
+#APP-TOP .topBg{
+	position: absolute;
+	left: 0;
+	/*top: -50px;*/
+	z-index: 10;
+}
+	#APP-TOP .topBg img{
+		width: 100%;
+	}
+
+.bdRight {
+  border-right: 1px solid #673a3a;
+}
+.bdWhite {
+  border-color: #fff;
+}
+
+/* top  */
+#APP-TOP{
+  overflow: hidden;
+}
+/* top title */
+#APP-TOP .titleContainer{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 30;
+	width: 100%;
+}
+	#APP-TOP .titleContainer h1{
+		padding: 0;
+		margin: 50px 0 0;
+		text-align: center;
+	}
+
+/* top bg */
+#APP-TOP .inner-top {
+	position: relative;
+	.inner-card {
+	    width: 100%;
+	    position: absolute;
+	    z-index: 20;
+	    display: block;
+	    top: 175px;
+	}
+	.box-card {
+		width: 45%;
+		margin: 0 auto;
+		text-align: center;
+		img {
+			width: 100%;
+		}
+	}
+}
+#APP-TOP .topBg{
+	/*position: absolute;*/
+	left: 0;
+	/*top: -50px;*/
+	z-index: 10;
+}
+	#APP-TOP .topBg img{
+		width: 100%;
+	}
+
+#APP-TOP .pointArea{
+	/*position: absolute;
+	height: 85px;*/
+	z-index: 100;
+	left: 0;
+	width: 100%;
+	right: 0;
+	background: #EFEAE4;
+	color: #6F625D;
+	.pointLeft{
+		width: 68%;
+		padding: 25px 0 0 15px;
+		float: left;
+		box-sizing: border-box;
+		.point_icon{
+			display: inline-block;
+			top: -19px;
+			position: relative;
+			width: 3%;
+			margin-left: 10px;
+			img{
+				width: 100%;
+			}
+		}
+		p{
+			margin: 0;
+			display: inline-block;
+			width: 30%;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 18px;
+		}
+		h2{
+			font-size: 33px;
+			font-weight: normal;
+			margin: -5px 0;
+			/*white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;*/
+			display: inline-block;
+			width: 50%;
+			text-align: right;
+			position: relative;
+    		bottom: 02px;
+		}
+		.unit{
+			display: inline-block;
+			margin-left: 05px;
+			width: 5%;
+			font-weight: bold;
+			bottom: 4px;
+			position: relative;
+		}
+	}
+	.pointRight{
+		text-align: left;
+		width: 32%;
+		box-sizing: border-box;
+		float: left;
+		padding: 13px 10px 8px 10px;
+		img {
+			width: 100px;
+		}
+	}
+	&.ios_Area{
+		.pointLeft{
+			padding: 23px 0 0 0px;
+			.point_icon{
+				/*top: -20px;*/
+			}
+			h2{
+				/*font-size: 35px;*/
+			}
+			p{
+				/*font-size: 14px;*/
+			}
+		}
+		.pointRight{
+			padding: 11px 10px 6px 10px;
+		}
+	}
+}
+
+#APP-TOP .button-group {
+	text-align: center;
+	margin: 0 auto;
+	padding: 21px 0 20px 0;
+	background: #EFEAE4;
+	.btn-common {
+		width: 45%;
+		color: #fff;
+		background-color: #6F625D;
+		border-radius: 5px;
+		font-size: 15px;
+		text-align: center;
+		padding: 14px 0;
+		display: inline-block;
+		margin: 0 5px;
+		font-weight: bold;
+	}
+}
+#APP-TOP .button-group.ios_Area {
+	text-align: center;
+	margin: 0 auto;
+	padding: 16px 0;
+	background: #EFEAE4;
+	.btn-common {
+		width: 45%;
+		color: #fff;
+		background-color: #6F625D;
+		border-radius: 5px;
+		font-size: 15px;
+		text-align: center;
+		padding: 14px 0;
+		display: inline-block;
+		margin: 0 5px;
+		font-weight: bold;
+	}
+}
+
+/* top menuContainer */
+#APP-TOP .menuContainer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 20;
+	width: 100%;
+	// background: #6F625D;
+	border-top: 1px solid #6F625D;
+	&.morepx {
+		bottom: 1px;
+	}
+}
+	
+	#APP-TOP .menuContainer .menuBody{
+		// border-right: 1px solid #6F625D;
+		// border-left: 1px solid #6F625D;
+		// border-bottom: 1px solid #6F625D;	
+	}
+
+	/* common */
+	#APP-TOP .menuContainer .btnM{
+		font-size: 13px;
+	}
+	#APP-TOP .menuContainer .btnS{
+		font-size: 12px;
+	}
+
+	/* column1 point */
+	#APP-TOP .menuContainer .menuColumn1{
+		width: 100%;
+		border-top: 1px solid;
+	}
+		#APP-TOP .menuContainer .menuColumn1 a{}
+			#APP-TOP .menuContainer .menuColumn1 a .menuBlock{}
+				#APP-TOP .menuContainer .menuColumn1 a .menuBlock .pointInformation{
+					float: left;
+					width: 60%;
+					padding: 15px 0 0;
+					text-align: center;
+				}
+					#APP-TOP .menuContainer .menuColumn1 a .menuBlock .pointInformation p{
+						padding: 0 0 5px;
+						margin: 0px;
+						font-size: 9px;
+					}
+					#APP-TOP .menuContainer .menuColumn1 a .menuBlock .pointInformation p.pointValue{
+						font-size: 40px;
+						color: #ff8c11;
+					}
+				#APP-TOP .menuContainer .menuColumn1 a .menuBlock div.pointUse{
+					float: left;
+					width: 40%;
+					padding: 40px 0 0;
+					font-size: 16px;
+					text-align: left;
+				}
+				#APP-TOP .menuContainer .menuColumn1 a .menuBlock div.pointBarcode{
+					clear: both;
+					text-align: center;
+					padding: 0px 0 15px;
+				}
+
+	/* column2 */
+	#APP-TOP .menuContainer .menuColumn2{
+		display: table;
+		width: 100%;
+		border-top: 1px solid;
+		border-color: #673a3a !important;
+		background: #EFEAE4;
+	}
+		#APP-TOP .menuContainer .menuColumn2 a{
+			box-sizing: border-box;
+			display: table-cell;
+			width: 50%;
+			text-align: center;
+			/*border-right: 1px solid #673a3a;*/
+		}
+			#APP-TOP .menuContainer .menuColumn2 a .menuBlock{
+				/*border-right: 0px solid;*/
+				padding: 15px 0;
+			}
+			#APP-TOP .menuContainer .menuColumn2 a:last-child .menuBlock{
+				/*border-right: 0px solid;*/
+			}
+				#APP-TOP .menuContainer .menuColumn2 a .menuBlock .svgContainer{
+					display: block;
+				}
+				#APP-TOP .menuContainer .menuColumn2 a .menuBlock p{
+					display: inline;
+					width: 100%;
+				}
+				#APP-TOP .menuContainer .menuColumn2 a .menuBlock span.badge-number{
+					position: absolute;
+				    top: 20px;
+				    left: 54%;
+				    font-size: 10px;
+				    background: red;
+				    color: #fff;
+				    border-radius: 50% 50%;
+				    width: 20px;
+				    height: 20px;
+				    line-height: 20px;
+				    display: none;
+				}
+				#APP-TOP .menuContainer .menuColumn2 a .menuBlock span.badge-number.show{
+				    display: block;
+				}
+
+	/* column3 */
+	#APP-TOP .menuContainer .menuColumn3{
+		clear: both;
+		width: 100%;
+		border-top: 1px solid;
+		background: #EFEAE4;
+	}
+		#APP-TOP .menuContainer .menuColumn3 a{
+			display: block;
+			float: left;
+			padding: 0px 0 4px 0;
+			width: 32.9%;
+			border-right: 1px solid #6F625D;
+			text-align: center;
+		}
+		#APP-TOP .menuContainer .menuColumn3 a:last-child{
+			border-right: 0px solid;
+		}
+			#xAPP-TOP .menuContainer .menuColumn3 a .svgContainer{
+				display: block;
+				margin: 15px auto;
+				height: 35px;
+			}
+			#APP-TOP .menuContainer .menuColumn3 a p{
+				display: inline;
+				width: 100%;
+			}
+			#APP-TOP .menuContainer .menuColumn3 a .menuBlock{
+				position: relative;
+				img{
+					width: 40px;
+					height: 40px;
+				}
+			}
+			#APP-TOP .menuContainer .menuColumn3 a .menuBlock span.badge-number{
+				position: absolute;
+			    top: 2px;
+			    left: 68%;
+			    font-size: 10px;
+			    background: #e30012;
+			    color: #fff;
+			    border-radius: 50% 50%;
+			    width: 20px;
+			    height: 20px;
+			    line-height: 20px;
+			    text-align: center;
+			    display: none;
+			}
+			#APP-TOP .menuContainer .menuColumn3 a .menuBlock span.badge-number.show{
+			    display: block;
+			}
+
+	/* menuFooter */
+	#APP-TOP .menuContainer .menuFooter{
+		clear: both;
+		// border-left: 1px solid #6F625D;
+		// border-bottom: 1px solid #6F625D;
+	}
+		#APP-TOP .menuContainer .menuFooter .menuBlock{}
+			#APP-TOP .menuContainer .menuFooter a .menuBlock{
+				text-align: center;
+			}
+				#APP-TOP .menuContainer .menuFooter a .menuBlock .svgContainer{
+					display: inline;
+				}
+					#APP-TOP .menuContainer .menuFooter a .menuBlock .svgContainer img{
+						vertical-align: middle;
+						width: 40px;
+						height: 40px;
+					}
+				#APP-TOP .menuContainer .menuFooter a .menuBlock p{
+				}
+
+			/* column2 */
+			#APP-TOP .menuContainer .menuFooter .menuColumn2{
+				display: table;
+				width: 100%;
+				// height: 50px;
+				border-top: 1px solid #6F625D !important;
+			}
+				#APP-TOP .menuContainer .menuFooter .menuColumn2 a{
+					display: table-cell;
+					width: 50%;
+					text-align: center;
+					// border-right: 1px solid #6F625D;
+					// border-left: 1px solid #6F625D;
+				}
+					#APP-TOP .menuContainer .menuFooter .menuColumn2 a .menuBlock{
+						border-right: 1px solid #6F625D;
+						padding: 0px 0;
+					}
+					#APP-TOP .menuContainer .menuFooter .menuColumn2 a:last-child .menuBlock{
+						border-right: 0px solid;
+					}
+						#APP-TOP .menuContainer .menuFooter .menuColumn2 a .menuBlock .svgContainer{
+							display: inline;
+						}
+						#APP-TOP .menuContainer .menuFooter .menuColumn2 a .menuBlock p{
+							display: inline;
+							width: 100%;
+							padding-right: 15px;
+						}
+
+
+@media only screen and (min-height: 700px) and (max-height: 750px) {
+
+	#APP-TOP{
+		.pointArea{
+			&.ios_Area{
+				.pointLeft{
+					padding: 23px 0 0 0px;
+					.point_icon{
+						/*top: -20px;*/
+					}
+					h2{
+						font-size: 35px;
+					}
+					p{
+						font-size: 14px;
+					}
+				}
+				.pointRight{
+					padding: 11px 10px 6px 10px;
+				}
+			}
+		}
+		.button-group{
+			.btn-common{
+				font-size: 18px;
+				padding: 17px 0;
+			}
+			&.ios_Area {
+				padding: 18px 0;
+				background: #EFEAE4;
+				.btn-common {
+					font-size: 16px;
+				}
+			}
+		}
+		.menuContainer .menuColumn3 a{
+			padding: 15px 0;
+		}
+	}
+
+}
+
+@media only screen and (min-height: 510px) and (max-height: 600px) {
+
+	#APP-TOP .pointArea {
+		.pointLeft {
+			padding: 22px 0 0px 0px;
+			width: 67%;
+			.point_icon {
+				margin: 0 03px 0 10px;
+				top: -18px;
+			}
+			p {
+				font-size: 12px;
+				width: 27%;
+			}
+			h2 {
+				font-size: 30px;
+				margin: -06px 0;
+				bottom: 3px;
+			}
+		}
+		.pointRight {
+			width: 33%;
+			img {
+				width: 86px;
+			}
+		}
+		&.ios_Area {
+			.pointLeft {
+				padding: 22px 0 0px 0px;
+				width: 67%;
+				.point_icon {
+					margin: 0 03px 0 10px;
+					top: -18px;
+				}
+				p {
+					font-size: 10px;
+					width: 27%;
+				}
+				h2 {
+					font-size: 28px;
+					margin: -06px 0;
+					bottom: 3px;
+				}
+			}
+			.pointRight {
+				width: 33%;
+				img {
+					width: 86px;
+				}
+			}
+		}
+	}
+
+	.button-group{
+		padding: 17px 0 16px 0 !important;
+		.btn-common{
+			padding: 14px 0 !important;
+			font-size: 14px !important;
+		}
+	}
+
+	#APP-TOP .menuContainer{
+		.menuColumn3 a .menuBlock .svgContainer {
+			height: 40px;
+			img {
+				width: 40px;
+				height: 40px;
+			}
+		}
+		.menuColumn3 a{
+			padding: 10px 0;
+			&#orderIcon{
+				letter-spacing: -1px;
+			}
+		}
+		.btnM{
+			font-size: 12px;
+		}
+	}
+
+}
+
+@media only screen and (min-height: 450px) and (max-height: 500px) {
+	
+	#APP-TOP .pointArea {
+		.pointLeft{
+			padding: 20px 0 0px 0px;
+			width: 68%;
+			.point_icon{
+				top: -18px;
+				margin: 0 03px 0 12px;
+			}
+			p{
+				font-size: 11px;
+				width: 30%;
+			}
+			h2{
+				font-size: 25px;
+				margin: -06px 0;
+				width: 47%;
+			}
+			.unit{
+				bottom: 4px;
+			}
+		}
+		.pointRight{
+			width: 32%;
+			img{
+				width: 80px;
+			}
+		}
+	}
+	
+	.button-group{
+		padding: 18px 0 18px 0 !important;
+		.btn-common{
+			padding: 12px 0 !important;
+			font-size: 12px !important;
+		}
+	}
+
+	#APP-TOP .menuContainer{
+		.menuColumn3 a .menuBlock .svgContainer {
+			height: 40px;
+			img {
+				width: 40px;
+				height: 40px;
+			}
+		}
+		.menuColumn3 a{
+			padding: 10px 0;
+		}
+		.btnM{
+			font-size: 12px;
+		}
+	}
+		
+}

@@ -1,0 +1,96 @@
+//////// FROM CSS ////////
+#HISTORY-LIST .btn_area {
+	padding: 12px 20px;
+	text-align: center;
+}
+
+#HISTORY-LIST button {
+	height: 26px;
+	border-radius: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	border: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	outline: 0;
+}
+
+#HISTORY-LIST .btn_area button {
+	width: 32%;
+}
+
+#HISTORY-LIST li {
+	text-align: center;
+	font-size: 12px;
+}
+
+#HISTORY-LIST .row {
+	display: table;
+	width: 100%;
+} 
+
+#HISTORY-LIST .row div {
+	display: table-cell;
+	vertical-align: middle;
+} 
+
+#HISTORY-LIST .row .col1 {
+	width: 24%;
+}
+
+#HISTORY-LIST .row .col2, #HISTORY-LIST .row .col3 {
+	width: 38%;
+}
+
+#HISTORY-LIST .row .col4 {
+	width: 76%;
+}
+
+#HISTORY-LIST .left_header {
+	height: 20px;
+	font-weight: bold;
+}
+
+#HISTORY-LIST .mid_header, 
+#HISTORY-LIST .right_header {
+	height: 20px;
+	font-weight: bold;
+	border-left: 1px solid;
+}
+
+#HISTORY-LIST .use_time, #HISTORY-LIST .sall  {
+	text-align: right;
+	padding: 5px 5px 5px 20px;
+	border-right: 1px solid;
+	border-bottom: 1px dashed;
+}
+
+#HISTORY-LIST .use_time {
+	font-size: 9px;
+}
+
+#HISTORY-LIST .time {
+	font-size: 12px;
+}
+
+#HISTORY-LIST .sall {
+	font-size: 14px;
+	line-height: 15px;
+	padding: 5px 5px 5px 0px;
+}
+
+#HISTORY-LIST .use_shop {
+	line-height: 15px;
+	text-align: left;
+	padding: 5px 20px 5px 5px;
+	border-bottom: 1px dashed;
+}
+
+#HISTORY-LIST .use_coupon {
+	line-height: 15px;
+	text-align: left;
+	padding: 5px;
+	border-bottom: 1px dashed;
+	border-right: 1px solid;
+}
+

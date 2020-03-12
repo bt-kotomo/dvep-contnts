@@ -1,0 +1,39 @@
+<!-- <%= useCondInterval %>  -->
+
+<div id="use-status-view" class="hlftcolor2 hlbgcolor2"></div>
+<div class="box_img_detail"><img src="<%= couponImageUrl %>"></div>
+<div class="coupon_title ftcolor1"><%= name %></div>
+<div class="coupon_detail ftcolor3"><%= App.util.text.nl2br( detailText ) %>	</div>
+<dl>
+
+<% if( usePeriodType + "" === "0" ){ %>
+	<dt class="use_time_title ftcolor1">利用期間</dt>
+	<dd class="ftcolor3"><%= formatDate( usePeriodStartDate ) %> ～ <%= formatDate( usePeriodEndDate ) %></dd>
+<% }else{ %>
+	<dt class="use_time_title ftcolor1">有効期限</dt>
+	<dd class="ftcolor3"><%= formatDate( expires ) %></dd>
+<% } %>
+
+<% if( useCondLimit > 0 ){ %>
+	<dt class="use_check_title ftcolor1">利用条件</dt>
+	<dd class="ftcolor3">先着<%= useCondLimit %>名様までご利用可能</dd>
+<% } %>
+
+<% if( useCondNumber > 0 ){ %>
+	<dt class="use_check_title ftcolor1">回数制限</dt>
+	<dd class="ftcolor3">合計<%= useCondNumber %>回まで利用可能</dd>
+<% } %>
+
+	<dt class="use_attention_title ftcolor1">備考・注意事項</dt>
+	<dd class="ftcolor3"><%= note %></dd>
+</dl>
+<div class="btn_area">
+<% if( isBeforeTerm ){ %>
+	<button type="button" disabled id="use-btn" class="btbgcolor1 btftcolor1">利用期間開始前</button>
+<% } else if( canBeUsed ){ %>
+	<button type="button" id="use-btn" class="btbgcolor1 btftcolor1">このクーポンを使う</button>
+<% }else{ %>
+	<button type="button" disabled class="btbgcolor1 btftcolor1"><%= limitConditionText() %></button>
+<% } %>
+	<button style="display:none;" type="button" id="share-btn" class="btbgcolor2 btbdcolor1 btftcolor2">このクーポン情報をシェア</button>
+</div>

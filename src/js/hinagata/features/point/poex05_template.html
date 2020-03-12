@@ -1,0 +1,57 @@
+<div class="point-exchange point-exchange-process">
+    <div class="poex-container">
+        <div class="poex-item-info">
+            <div class="poex-wrap">
+                <table class="style-2">
+                    <tr>
+                        <td class="item item-left">
+                            <img src="<%- items[0].logo %>" />
+                            <p class="poex-point"><span class="number"><%- App.util.text.numberWithDelimiter(AppConf.bclib.amountExchange) %></span> pt</p>
+                        </td>
+                        <td class="equal">=</td>
+                        <td class="item item-right">
+                            <img src="<%- items[1].logo %>" />
+                            <p class="poex-point"><span class="number"><%- App.util.text.numberWithDelimiter(AppConf.bclib.amountExchange * items[1].value) %></span> pt</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="poex-content">
+            <h3 class="heading">- 交換結果 -</h3>
+            <div class="spacing-10"></div>
+            <div class="poex-item-selected">
+                <table>
+                    <tr>
+                        <td class="image"><img src="<%- items[0].logo %>" /></td>
+                        <td class="button">
+                            <p class="poex-subpoint"><span class="number"><%- App.util.text.numberWithDelimiter(items[0].point - AppConf.bclib.amountExchange) %></span> pt</p>
+                            <p class="poex-point">(<span class="number"><%- App.util.text.numberWithDelimiter(items[0].point) %></span> pt)</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- end .poex-item-selected -->
+            <div class="arrow-down"></div>
+            <!-- end .arrow-bottom -->
+            <div class="poex-item">
+                <table>
+                    <tr>
+                        <td class="image"><img src="<%- items[1].logo %>" /></td>
+                        <td class="title"><%- items[1].title %></td>
+                        <td class="button">
+                            <p class="poex-subpoint"><span class="number"><%- App.util.text.numberWithDelimiter(items[1].point + AppConf.bclib.amountExchange * items[1].value) %></span> pt</p>
+                            <p class="poex-point">(<span class="number"><%- App.util.text.numberWithDelimiter(items[1].point) %></span> pt)</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="spacing-40"></div>
+            <div class="poex-btns">
+                <div class="column"><a class="button btn-cancel" href="#poex02">キャンセル</a></div>
+                <div class="column"><a class="button btn-ok js-confirm-exchange">確認</a></div>
+            </div>
+            <!-- end .poex-item-info -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="INFORMATION-ITEM-BOX">
+	<a href="#information/<%= id %>" class="cf">
+		<div class="row cf">
+			<div class="box_images">
+        <% if(imageUrl){ %>
+  			 <img src="<%= imageUrl %>">
+        <% }else{ %>
+  			 <img src="./image/common/noImage.png">
+        <% } %>
+      </div> <!-- box_images -->
+			<div class="coupon_info">
+				<div class="info_date ftcolor1">
+					<%= formatDate( openDate ) %>
+					<% if( readFlg + "" !== "1" ){ %><span class="NEWEST-MARK hlftcolor1 hlbgcolor1">NEW</span><% } %>
+				</div>
+				<div class="coupon_name"><%= title %></div>
+			</div>
+		</div>
+	</a>
+</div>

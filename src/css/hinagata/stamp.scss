@@ -1,0 +1,119 @@
+//////// FROM CSS ////////
+#STAMP-DOWN {
+	overflow: hidden;
+	background-color: #fff;
+    height: 100%;
+}
+#STAMP-DOWN #stamp-go-down img {
+	width: 100%;	
+}
+
+#STAMP-TOP .memo {
+	text-align: center;
+	font-size: 14px;
+	padding: 20px 0 0px 0;
+}
+#STAMP-TOP ol {
+	width: 310px;
+	margin: 10px auto auto auto;
+	padding-bottom: 10px;
+}
+#STAMP-TOP li {
+	display: inline-block;
+	width: 58px; 
+	height: 58px; 
+	margin: 5px 0 0 5px;
+	line-height: 58px;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+}
+#STAMP-TOP li:after {
+	content:attr(data-index);
+	position: absolute;
+	left: 0; 
+	right: 0; 
+	top: 0; 
+	bottom: 0;
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 0.25;
+}
+#STAMP-TOP li img {
+	width: 42px; 
+	height: 42px;
+	margin-top: 8px;
+}
+#STAMP-TOP li:nth-of-type(5n+1) {
+	margin-left: 0px;
+}
+#STAMP-TOP .btn_area {
+	clear: both;
+	padding: 0px 20px 20px 20px;
+	font-size: 12px;
+}
+#STAMP-TOP button {
+	width: 100%;
+	height: 44px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	box-sizing: border-box;
+	border: 0;
+	margin-top: 30px;
+}
+#STAMP-TOP .use_cond {
+	margin-top: 20px;
+	background: url(../image/common/check.svg) no-repeat left center;
+	background-size: 16px auto;
+	padding-left: 20px;
+	height: 22px;
+	line-height: 22px;
+}
+#STAMP-TOP .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background-color: rgba(0,0,0,0.3);
+	text-align: center;
+	min-height: 100%;
+}
+#STAMP-TOP .contents {
+	padding: 30px 20px;
+	display: inline-block;
+    margin: 0px auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 80%;
+}
+#STAMP-TOP .msg {
+	padding-bottom: 15px;
+	border-bottom: 1px dashed;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#STAMP-TOP .get_date {
+	background: url(../image/common/time.svg) no-repeat left center;
+	background-size: 16px auto;
+	padding: 0 0 0 20px;
+	margin-top: 15px;
+	height: 22px;
+	line-height: 22px;
+	font-size: 12px;
+	text-align: left;
+}
+#STAMP-TOP button.use-coupon-btn {
+	margin-top: 20px;
+}
+#STAMP-TOP button.show-coupon-btn,
+#STAMP-TOP button.close-btn {
+	margin-top: 20px;
+	border: 2px solid;
+}
+#stamp-img {
+	max-width: 100%;
+	overflow: hidden;
+}

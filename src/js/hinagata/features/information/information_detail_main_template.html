@@ -1,0 +1,12 @@
+<div class="info_date ftcolor1"><%= formatDate( openDate ) %></div>
+<div class="info_title ftcolor1 bdcolor1"><%= title %></div>
+
+<% if(extras.contentHeader){ %>
+<div class="info_words"><%= App.util.text.nl2br( extras.contentHeader ) %></div>
+<% } %>
+<% if(imageUrl){ %>
+<img src="<%= imageUrl %>" alt="店舗">
+<% } %>
+<% if(extras.contentFooter){ %>
+<div class="info_words"><%= App.util.text.nl2br( extras.contentFooter ) %></div>
+<% } %>

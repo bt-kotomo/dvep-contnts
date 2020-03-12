@@ -1,0 +1,9 @@
+<applican-whitelist>
+	<allowed>*</allowed>
+    <rules scope="launch_url">
+        <allowed format="regexp">http:\/\/bt11\.betrend\.com\/.*</allowed>
+        <allowed format="regexp">https:\/\/bt11\.betrend\.com\/.*</allowed>
+        <allowed format="regexp">http:\/\/bemss\.jp\/.*</allowed>
+        <allowed format="regexp">https:\/\/bemss\.jp\/.*</allowed>
+    </rules>
+</applican-whitelist>

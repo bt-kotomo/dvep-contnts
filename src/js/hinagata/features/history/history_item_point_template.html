@@ -1,0 +1,12 @@
+<div class="row bgcolor1">
+<% if( AppConf.features.smart ){ %>
+	<div class="use_time col1 bdcolor1"><%= formatDate( procDate ) %><br><span class="time"><%= formatTime( procDate ) %></span></div>
+	<div class="sall col2 bdcolor1"><%= priceOrPointSign( price, pointType ) %><%= priceOrPoint( price, point ) %><%= priceOrPointDelimiter( price ) %></div>
+	<div class="use_shop col3 bdcolor1"><%= getReqClassValue( reqClass )%></div>
+<% } else { %>
+	<div class="use_time col1 bdcolor1"><%= formatDate( procDate ) %><br><span class="time"><%= formatTime( procDate ) %></span></div>
+	<div class="sall col2 bdcolor1"><%= pointTypeSign( pointType ) %><%= point %></div>
+	<div class="use_shop col3 bdcolor1"><%= shopName %></div>
+<% } %>
+
+</div>

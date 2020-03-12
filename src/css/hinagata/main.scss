@@ -1,0 +1,177 @@
+$baseColor: #F0F1F5;
+$mainColor: #1b232a;
+$overLayZIndex: 9999;
+$bronzeColor: #815A2B;
+
+.BACKBONE-PAGE{
+	height: 100%;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll !important;
+}
+.page{
+	height: 100%;
+}
+.touch {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
+.disabled-click{
+    pointer-events: none;
+}
+
+#HINAGATA{
+	.APP-HEADER{
+		display: fixed;
+		text-align: center;
+		border: solid 0px $mainColor;
+		border-bottom-width: 2px;
+		z-index: 1100;
+
+		.HEADER-INNER-WRAPPER{
+			width: 100%;
+			height: 100%;
+			background-color: $baseColor;
+			.TITLE{
+				color: $mainColor;
+				font-size: 18px;
+				font-weight: bold;
+			}
+
+			.HEADER-LEFT{
+				position: absolute;
+				left: 0px;
+				z-index: 1;
+			}
+			.HEADER-RIGHT{
+				position: absolute;
+				right: 0px;
+				z-index: 1;
+			}
+			.BACK-BUTTON-WRAPPER{
+				display: inline-block;
+				height: 40px;
+				.BACK-BUTTON{
+					//background: $mainColor;
+					background-image: url('../image/common/btn_back.svg');
+					background-repeat: no-repeat;
+					background-position: left center;
+					color: white;
+					padding: 5px 10px;
+					margin-left: 10px;
+					border-radius: 5px;
+					font-size: 12px;
+					border: none;
+				}
+
+			}
+
+        }
+
+        &.header-poex{
+            $cl: #1c3e7d;
+            border-color: $cl;
+            .HEADER-INNER-WRAPPER{
+                background-color: $cl;
+                .TITLE{
+                    color: #fff;
+                }
+                .BACK-BUTTON-WRAPPER {
+                    position: relative;
+                    .BACK-BUTTON{
+                        background-image: url('../image/common/btn_back.png');
+                        background-color: transparent;
+                        color: transparent;
+                        background-size: 20px auto;
+                        -webkit-background-size: 20px auto;
+                    }
+                }
+            }
+        }
+
+	}
+
+
+}
+
+body{
+	background-size: 100%;
+}
+
+.cf:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.cf { display: inline-block; }
+/* start commented backslash hack \*/
+* html .cf { height: 1%; }
+.cf { display: block; }
+/* close commented backslash hack */
+
+#master-container{
+	background: none;
+}
+
+#master-container{
+	background: none;
+}
+
+
+
+.A-NAVS{
+	font-size: 18px;
+
+	li{
+		height: 65px;
+		line-height: 65px;
+		box-sizing: border-box;
+		padding: 0px 20px;
+		color: white;
+
+		&:nth-child(3n+1){ background-color: rgba( 0, 0, 0,0.3);}
+		&:nth-child(3n+2){ background-color: rgba(20,20,20,0.3);}
+		&:nth-child(3n+0){ background-color: rgba(40,40,40,0.3);}
+
+	}
+
+};
+
+.VERTICAL-NAV{
+	box-sizing: border-box;
+}
+
+.emptyView{
+	text-align: center;
+	padding-top: 15px;
+}
+
+.readMoreButton{
+	width: 100%;
+	height: 50px;
+	border: none;
+	color: black;
+	background-color: lightgrey;
+}
+
+@import "./mixins.scss";
+@import "./stamp.scss";
+@import "./login.scss";
+@import "./coupon.scss";
+@import "./shop.scss";
+@import "./point.scss";
+@import "./point-exchance.scss";
+@import "./config.scss";
+@import "./information.scss";
+@import "./history.scss";
+@import "./top_2col.scss";
+@import "./chirashi.scss";
+@import "./dialogue.scss";
+@import "./smart.scss";
+@import "./member.scss";
+@import "./modal-v1.scss";
+@import "./modal.scss";
+

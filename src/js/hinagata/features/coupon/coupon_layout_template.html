@@ -1,0 +1,32 @@
+	<div id="COUPON-LIST" class="BACKBONE-PAGE">
+		<div style="display: none;" id="search" class="search serchbgcolor1">
+			<div id="search_btn" class="search_btn">
+				<button class="btbgcolor1 btftcolor1">検索</button>
+				<button class="btbgcolor1 btftcolor1">近くのお店</button>
+				<button class="btbgcolor1 btftcolor1">カテゴリ</button>
+			</div>
+			<input type="text" id="search_input" name="account_id" placeholder="フリーワード検索" value="">
+		</div>
+
+		<div id="couponsRegion" class="bgcolor1 ftcolor1">
+			<ol class="COUPONS">
+				<li>
+					<div class="COUPON-ITEM-BOX MEMBER-ONLY">
+						<a href="" class="cf">
+							<div class="box_images">
+							  <img src="">
+              </div> <!-- box_images -->
+						  <div class="coupon_info">
+							  <div class="MEMBER-ONLY-MARK hlbgcolor1 hide_this">会員限定クーポン</div>
+							  <div class="coupon_name"></div>
+							  <div class="valid_time">有効期限:</div>
+						  </div> <!-- coupon_info -->
+						</a>
+					</div>
+				</li>
+			</ol>
+		</div>
+		<button class="more-button hide readMoreButton">更に読み込む</button>
+	</div>
+
+<%= App.util.injectProgressScreenDom()  %>

@@ -1,0 +1,8 @@
+<a href="#shop/<%= id %>">
+<div class="row ftcolor1">
+	<div class="shopName"><%= name %></div>
+<% if( _.isNumber( distance ) ){ %>
+	<div class="shopDistance">現在位置から<%= App.util.number.roundEx( distance, 2 ) %>km</div>
+<% } %>
+</div>
+</a>

@@ -1,0 +1,34 @@
+<div id="poex01" class="point-exchange point-exchange-link">
+    <div class="poex-container">
+        <h2 class="poex-title">ポイント管理</h2>
+        <div class="poex-content">
+            <ul class="poex-list">
+
+                <% _.each(AppConf.pointExchange.list, function(item) { %>
+
+                <li id="poex-item-<%- item.id %>" data-id="<%- item.id %>" class="poex-item <%- item.addition %> <%- item.active ? 'active' : '' %>">
+                    <table>
+                        <tr>
+                            <td class="image"><img src="<%- item.logo %>" /></td>
+                            <td class="title"><%- item.title %></td>
+                            <td class="button">
+                                <span class="poex-point">
+                                    <span class="number"><span class="js-point"><%- App.util.text.numberWithDelimiter(item.point) %></span> pt</span>
+                                    <span class="notnumber">連携する</span>
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+
+                <% }) %>
+
+            </ul>
+            <div class="spacing-30"></div>
+            <div class="poex-bottom">
+                <a class="btn-recent button" href="#history">利用履歴</a>
+                <a class="btn-poex button" href="#poex02">ポイント交換</a>
+            </div>
+        </div>
+    </div>
+</div>

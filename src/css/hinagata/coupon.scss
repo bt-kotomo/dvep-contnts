@@ -1,0 +1,259 @@
+@import "./../mixin";
+
+/* 
+ * Declare variable CSS for images coupon
+ */
+
+$w_imgCoupon : 75px;
+$h_imgCoupon : 60px;
+
+
+#COUPON-LIST{
+
+	.COUPON-ITEM-BOX{
+
+		.MEMBER-ONLY-MARK{
+			display: none;
+		}
+
+		&.MEMBER-ONLY{
+			.MEMBER-ONLY-MARK{
+				display: inline-block;
+			}
+		}
+	}
+
+}
+
+#COUPON-LIST{
+	.COUPON-ITEM-BOX{
+		.BEFORE-TERM-MARK{
+			display: inline-block;
+		}
+	}
+}
+
+//////// FROM CSS ////////
+#COUPON-LIST{}
+
+#COUPON-LIST .search {
+	height: 80px;
+	text-align: center;
+	padding: 0 20px 0 20px;
+}
+
+#COUPON-LIST input[type=text] {
+	width: 100%;
+	font-size: 12px;
+	border-radius: 5px;
+	height: 26px;
+	padding-left: 5px;
+}
+
+#COUPON-LIST .search_btn {
+	padding: 10px 0 8px 0;
+	text-align: center;
+}
+
+#COUPON-LIST .search_btn button {
+	width: 30%;
+	height: 26px;
+	border-radius: 5px;
+	font-size: 12px;
+	border: none;
+}
+
+#COUPON-LIST .search_btn button:nth-child(2) {
+	margin: 0 3% 0 3%;
+}
+
+#COUPON-LIST .COUPONS li {
+	border-bottom: 1px dotted;
+	padding: 15px 20px 15px 20px;
+  overflow: hidden;
+}
+
+#COUPON-LIST .COUPONS .box_images {
+  @include applySize($w_imgCoupon, $h_imgCoupon);
+	float: left;
+	margin-right: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+#COUPON-LIST .COUPONS img {
+  @include middleImg();
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+}
+
+#COUPON-LIST .coupon_info {
+	margin-left: 90px;
+	background: url(../image/common/arrow.svg) no-repeat right center;
+	background-size: 4% 22%;
+}
+
+#COUPON-LIST .MEMBER-ONLY-MARK, #COUPON-LIST .BEFORE-TERM-MARK {
+	padding: 3px;
+	font-size: 12px;
+}
+
+#COUPON-LIST .coupon_name {
+	padding-top: 5px;
+	padding-bottom: 12px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+#COUPON-LIST .valid_time {
+	font-size: 11px;
+}
+
+#COUPON-DETAIL{
+	overflow: hidden;
+}
+
+#COUPON-DETAIL #use-status-view {
+	padding: 0 20px 0 20px;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+#COUPON-DETAIL #use-status-view div {
+	padding-left: 20px;
+}
+
+#COUPON-DETAIL .use_title {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px dotted;
+	padding: 18px 0 15px 0;
+}
+
+#COUPON-DETAIL .use_time {
+	margin-top: 15px;
+	background: url(../image/common/time1.svg) no-repeat left center;
+	background-size: 16px auto;
+}
+
+#COUPON-DETAIL .use_shop {
+	padding: 15px 0 18px 0;
+	background: url(../image/common/shop.png) no-repeat left center;
+	background-size: 20px auto;
+}
+
+#coupon-detail-region {
+  padding: 20px 0 0;
+}
+
+#COUPON-DETAIL .box_img_detail {
+  @include applySize(320px, 320px);
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #E0DBDB;
+}
+
+#COUPON-DETAIL img{
+  @include middleImg();
+}
+
+#COUPON-DETAIL .coupon_title {
+	padding: 20px 20px 0 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#COUPON-DETAIL .coupon_detail {
+	padding: 15px 20px 0 20px;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+#COUPON-DETAIL dl {
+	padding: 0 20px 0 20px;
+	margin: 0 0 20px 0;
+	font-size: 12px;
+}
+
+#COUPON-DETAIL dt {
+	margin-top: 25px;
+	padding-left: 19px;
+	height: 20px;
+	line-height: 20px;
+}
+
+#COUPON-DETAIL .use_time_title {
+	background: url(../image/common/time.svg) no-repeat left center;
+	background-size: 16px auto;
+}
+
+#COUPON-DETAIL .use_check_title {
+	background: url(../image/common/check.svg) no-repeat left center;
+	background-size: 16px auto;
+}
+
+#COUPON-DETAIL .use_attention_title {
+	background: url(../image/common/attention.png) no-repeat left center;
+	background-size: 15px 16px;
+}
+
+#COUPON-DETAIL dd {
+	padding: 0;
+	margin: 0;
+}
+
+#COUPON-DETAIL .btn_area {
+	padding: 0 20px 40px 20px;
+}
+
+#COUPON-DETAIL button {
+	width: 100%;
+	height: 44px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 20px;
+	border-width: 2px;
+	box-sizing: border-box;
+	white-space: nowrap;
+}
+
+#COUPON-DETAIL button:disabled {
+	opacity: 0.25;
+}
+
+// QR
+#COUPON-DETAIL .qrOverlay{
+	position: absolute;
+	top: 0px;
+	left: -20px;
+	right: 0px;
+	z-index: 9999;
+	/*min-height: 3000px;*/
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+}
+
+
+#COUPON-DETAIL .qrOverlay .qrText{
+	color: white;
+	margin-top:30px;
+	font-size: 14px;
+}
+
+#COUPON-DETAIL .qrOverlay .qrImage{
+	margin-top: 50px;
+	width: 150px;
+	height: 150px;
+}
+
+#COUPON-DETAIL{
+	&.disable-scroll{
+		overflow-y: hidden !important;
+	}
+}

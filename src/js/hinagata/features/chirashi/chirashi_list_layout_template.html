@@ -1,0 +1,27 @@
+<div id="CHIRASHI-LIST" class="BACKBONE-PAGE">
+<div id="chirashi-list-region">
+	<ul>
+		<li class="bdcolor1 bgcolor1">
+			<a href="<%= AppConf.demo.chirashi.viewer %>?img=<%= AppConf.demo.chirashi.chirashi1.imageUrl %>&_native_open_embedded">
+				<div class="row">
+					<div class="chirashiImg" >
+						<img src="<%= AppConf.demo.chirashi.chirashi1.thumbnailUrl %>">
+					</div>
+					<div class="chirashiText"><%= AppConf.demo.chirashi.chirashi1.title %></div>
+				</div>
+			</a>
+		</li>
+		<li class="bdcolor1 bgcolor1">
+			<a href="<%= AppConf.demo.chirashi.viewer %>?img=<%= AppConf.demo.chirashi.chirashi2.imageUrl %>&_native_open_embedded">
+				<div class="row">
+					<div class="chirashiImg" >
+						<img src="<%= AppConf.demo.chirashi.chirashi2.thumbnailUrl %>">
+					</div>
+					<div class="chirashiText"><%= AppConf.demo.chirashi.chirashi2.title %></div>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
+</div>
+<!-- 実装時にはコメントアウトを解除 : ローディング画像表示のため <%= App.util.injectProgressScreenDom()  %> -->

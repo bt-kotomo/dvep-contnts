@@ -1,0 +1,13 @@
+<div class="COUPON-ITEM-BOX <% if( isMemberOnly){ %>MEMBER-ONLY<% } %>">
+	<a href="#coupon/<%= id %>?uCoupId=<%= uCoupId %>" class="cf">
+      <div class="box_images">
+    		<img src="<%= couponImageUrl %>">
+      </div> <!-- box_images -->
+			<div class="coupon_info">
+    		<div class="MEMBER-ONLY-MARK hlftcolor1 hlbgcolor1">会員限定クーポン</div>
+    		<% if(isBeforeTerm){ %><div class="BEFORE-TERM-MARK hlftcolor2 hlbgcolor2">利用期間開始前</div><% } %>
+    		<div class="coupon_name"><%= name %></div>
+    		<div class="valid_time">有効期限:<%= expiresFormat( expires ) %>まで</div>
+			</div> <!-- coupon_info -->
+	</a>
+</div>

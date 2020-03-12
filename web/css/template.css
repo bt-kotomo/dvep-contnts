@@ -1,0 +1,110 @@
+/* font color */
+.ftcolor1{
+	color: #6F625D  !important;
+}
+.ftcolor2{
+	color: #000000 !important;
+}
+.ftcolor3{
+	color: #333333 !important;
+}
+
+.ftcolor5{
+	color: #6F625D !important;
+}
+
+/* highlight font color */
+.hlftcolor1{
+	color: #000000;
+}
+.hlftcolor2{
+	color: #ffffff;
+}
+.hlftcolor3{
+	color: #dd8d2d;
+}
+
+/* background color */
+.bgcolor1{
+	background-color: #eff1f5;
+}
+
+.bgcolor2{
+	background-color: #f5ead5;
+}
+
+.bgcolor3{
+	background-color: #ffffff;
+}
+
+.bgcolor4{
+	background-color: #878787;
+}
+
+/* highlight background color */
+.hlbgcolor1{
+	background-color: #ffda0c;
+}
+.hlbgcolor2{
+	background-color: #dd525c;
+}
+
+/* border color */
+.bdcolor1{
+	border-color: #1b232a !important;
+}
+.bdcolor2{
+	border-color: #6F625D !important;
+}
+
+/* highlight border color */
+.hlbdcolor2{
+	color: #ffffff;
+}
+
+/* button background color */
+.btbgcolor1{
+	background-color: #1b232a;
+}
+
+.btbgcolor2{
+	background-color: #ffffff;
+}
+
+.hl2_btbgcolor1{
+	background-color: #fff;
+}
+
+.hl2_btbgcolor2{
+	background-color: #dd525c;
+}
+
+/* button border color */
+.btbdcolor1{
+	border-color: #1b232a;
+}
+
+.hl2_btbdcolor2{
+	color: #ffffff;
+}
+
+/* button font color */
+.btftcolor1{
+	color: #ffffff !important;
+}
+.btftcolor2{
+	color: #1b232a !important;
+}
+
+.hl2_btftcolor1{
+	color: #e4525d;
+}
+
+.hl2_btftcolor2{
+	color: #fff;
+}
+
+/* search area color */
+.serchbgcolor1{
+	background-color: #cccccc;
+}
